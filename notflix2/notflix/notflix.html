@@ -15,6 +15,9 @@
                     window.location.replace("https://edgar-degas.netlify.app/");
                 }
             });
+            window.onbeforeunload = function(){
+                return 'Are you sure you want to leave?';
+            };
         </script>
         <div class="main">
             <h1>Welcome to Notflix!</h1>
